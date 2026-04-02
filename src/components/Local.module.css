@@ -1,0 +1,106 @@
+.section {}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Visual */
+.visual {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.accentBar {
+  width: 4px;
+  min-height: 280px;
+  background: var(--grad-accent);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 1;
+}
+
+.statCard {
+  background: var(--dark-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  transition: border-color 0.2s;
+}
+
+.statCard:hover {
+  border-color: var(--border-hover);
+}
+
+.statVal {
+  font-family: var(--font-display);
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  color: var(--orange-light);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Copy */
+.copy {}
+
+.bodyText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.bodyText p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.areaTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dark-3);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 28px;
+}
+
+.cta { }
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .visual {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accentBar {
+    display: none;
+  }
+}
