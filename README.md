@@ -1,6 +1,6 @@
-# Cape Climate H.V.A.C. Services — Website
+# Cape Climate° H.V.A.C. Services — Website
 
-Modern, conversion-focused HVAC website for Cape Climate, Georgetown, Delaware.
+Modern, conversion-focused HVAC website for Cape Climate°, Georgetown, Delaware.
 
 ---
 

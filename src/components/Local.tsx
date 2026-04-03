@@ -34,7 +34,7 @@ export default function Local() {
 
             <div className={styles.bodyText}>
               <p>
-                Cape Climate isn't a franchise or a national chain. We're a locally owned and operated HVAC company serving Sussex County and the Delaware Beaches — and our community's trust is the foundation everything is built on.
+                Cape Climate° isn't a franchise or a national chain. We're a locally owned and operated HVAC company serving Sussex County and the Delaware Beaches — and our community's trust is the foundation everything is built on.
               </p>
               <p>
                 When you call us, you're not routed through a call center or passed between departments. You reach real people who know the area, know your climate challenges, and can get someone out to you fast.

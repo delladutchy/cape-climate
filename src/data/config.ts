@@ -4,9 +4,9 @@
 // =============================================================
 
 export const BUSINESS = {
-  name: "Cape Climate",
+  name: "Cape Climate°",
   tagline: "H.V.A.C. Services",
-  fullName: "Cape Climate H.V.A.C. Services",
+  fullName: "Cape Climate° H.V.A.C. Services",
   owner: 'William "Adam" Cress',
   phone: "302.858.7160",
   phoneRaw: "3028587160",
@@ -23,7 +23,7 @@ export const BUSINESS = {
   email: "PLACEHOLDER_EMAIL@capeclimate.com", // ← Replace with real email
   hours: "Mon–Fri: 7am–6pm · Sat: 8am–2pm · Emergency calls available",
   founded: "2005", // ← Replace with actual founding year if known
-  copyright: `© ${new Date().getFullYear()} Cape Climate H.V.A.C. Services. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Cape Climate° H.V.A.C. Services. All rights reserved.`,
 };
 
 export const HERO = {
@@ -86,28 +86,28 @@ export const TESTIMONIALS = [
     name: "Sandra M.",
     location: "Rehoboth Beach, DE",
     rating: 5,
-    text: "Cape Climate fixed our AC the same day it broke. Fair pricing, clean work, and clear explanations.",
+    text: "Cape Climate° fixed our AC the same day it broke. Fair pricing, clean work, and clear explanations.",
   },
   {
     id: 2,
     name: "Tom & Diane R.",
     location: "Millsboro, DE",
     rating: 5,
-    text: "We've used big HVAC companies before, but Cape Climate stands out. They remember details and show up on time.",
+    text: "We've used big HVAC companies before, but Cape Climate° stands out. They remember details and show up on time.",
   },
   {
     id: 3,
     name: "Kevin L.",
     location: "Lewes, DE",
     rating: 5,
-    text: "Our heat pump was noisy. Cape Climate diagnosed and fixed it quickly for half the price others quoted.",
+    text: "Our heat pump was noisy. Cape Climate° diagnosed and fixed it quickly for half the price others quoted.",
   },
   {
     id: 4,
     name: "Patricia H.",
     location: "Seaford, DE",
     rating: 5,
-    text: "Called three companies. Only Cape Climate answered on Saturday, gave straight answers, and showed up as promised.",
+    text: "Called three companies. Only Cape Climate° answered on Saturday, gave straight answers, and showed up as promised.",
   },
   {
     id: 5,

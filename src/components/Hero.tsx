@@ -73,7 +73,7 @@ export default function Hero() {
             <div className={styles.cardHeader}>
               <div className={styles.cardLogo}>CC</div>
               <div>
-                <div className={styles.cardName}>CAPE° CLIMATE°</div>
+                <div className={styles.cardName}>CAPE CLIMATE°</div>
                 <div className={styles.cardTagline}>H.V.A.C. Services</div>
               </div>
             </div>

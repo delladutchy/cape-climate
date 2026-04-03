@@ -26,7 +26,7 @@ export default function Navbar() {
         <a href="#" className={styles.logo}>
           <span className={styles.logoAccent} aria-hidden="true" />
           <span>
-            <span className={styles.logoPrimary}>CAPE° CLIMATE°</span>
+            <span className={styles.logoPrimary}>CAPE CLIMATE°</span>
             <span className={styles.logoSub}>H.V.A.C. Services</span>
           </span>
         </a>

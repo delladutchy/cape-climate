@@ -7,7 +7,7 @@ export default function WhyUs() {
       <div className="container">
         <div className={styles.header}>
           <div className={styles.left}>
-            <p className="eyebrow">Why Cape Climate</p>
+            <p className="eyebrow">Why Cape Climate°</p>
             <h2 className="section-title" id="why-us-heading">
               The Local Standard.<br />
               Not the Corporate One.
@@ -38,9 +38,9 @@ export default function WhyUs() {
           <div className={styles.statementAccent} aria-hidden="true" />
           <blockquote>
             <p className={styles.statementText}>
-              "Cape Climate was built on one principle: do the job right, treat people fairly, and stand behind your work. Every call we take is a reflection of our name and our community."
+              "Cape Climate° was built on one principle: do the job right, treat people fairly, and stand behind your work. Every call we take is a reflection of our name and our community."
             </p>
-            <cite className={styles.statementCite}>— Cape Climate H.V.A.C. Services · Sussex County, Delaware</cite>
+            <cite className={styles.statementCite}>— Cape Climate° H.V.A.C. Services · Sussex County, Delaware</cite>
           </blockquote>
         </div>
       </div>
