@@ -43,6 +43,7 @@ a.contactCard:hover {
 
 .contactCardIcon {
   font-size: 20px;
+  color: var(--text-secondary);
   flex-shrink: 0;
 }
 

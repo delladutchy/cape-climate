@@ -17,16 +17,16 @@ export default function Services() {
 
         <div className={styles.grid}>
           {SERVICES.map((svc, i) => (
-            <article key={svc.id} className={styles.card} style={{ animationDelay: `${i * 0.07}s` }}>
+            <a key={svc.id} href="#contact" className={styles.card} style={{ animationDelay: `${i * 0.07}s` }} aria-label={`Request ${svc.title}`}>
               <div className={styles.cardInner}>
-                <span className={styles.icon} aria-hidden="true">{svc.icon}</span>
+                <span className={styles.icon} aria-hidden="true" dangerouslySetInnerHTML={{__html: svc.icon}} />
                 <h3 className={styles.title}>{svc.title}</h3>
                 <p className={styles.desc}>{svc.description}</p>
-                <a href="#contact" className={styles.link} aria-label={`Request ${svc.title}`}>
+                <span className={styles.link} aria-hidden="true">
                   Request Service <span aria-hidden="true">→</span>
-                </a>
+                </span>
               </div>
-            </article>
+            </a>
           ))}
         </div>
 
