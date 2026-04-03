@@ -27,12 +27,12 @@ export const BUSINESS = {
 };
 
 export const HERO = {
-  headline: "Trusted HVAC Experts in Sussex County & Delaware Beaches",
+  headline: "Delaware Beaches' Trusted HVAC Experts",
   subheadline:
-    "Licensed, insured, and locally owned. When your home's comfort is on the line, Cape Climate delivers fast, reliable service — backed by a team that picks up the phone and shows up on time.",
+    "Fast, reliable HVAC service. We answer the phone and show up on time.",
   cta_primary: "Call Now — We Answer",
   cta_secondary: "Request Service Today",
-  badge: "Licensed & Insured · Locally Owned",
+  badge: "Licensed & Insured • Locally Owned",
 };
 
 export const SERVICES = [

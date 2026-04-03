@@ -21,12 +21,12 @@ export default function Hero() {
 
           {/* Main headline */}
           <h1 className={styles.headline}>
-            <span className={styles.headlineLine1}>Trusted HVAC Experts</span>
-            <span className={`${styles.headlineLine2} text-gradient`}>Sussex County &</span>
-            <span className={styles.headlineLine3}>Delaware Beaches</span>
+            <span className={styles.headlineLine1}>Delaware Beaches'</span>
+            <span className={`${styles.headlineLine2} text-gradient`}>Trusted HVAC</span>
+            <span className={styles.headlineLine3}>Experts</span>
           </h1>
 
-          <p className={styles.sub}>{HERO.subheadline}</p>
+          <p className={styles.sub}>Fast, reliable HVAC service. We answer the phone and show up on time.</p>
 
           {/* Phone — prominent */}
           <a href={`tel:${BUSINESS.phoneRaw}`} className={styles.phoneBlock} aria-label={`Call us at ${BUSINESS.phone}`}>
@@ -86,7 +86,7 @@ export default function Hero() {
                 <span className={styles.infoIcon} aria-hidden="true">📍</span>
                 <div>
                   <div className={styles.infoLabel}>Service Area</div>
-                  <div className={styles.infoValue}>Sussex County & Delaware Beaches</div>
+                  <div className={styles.infoValue}>Delaware Beaches</div>
                 </div>
               </div>
               <div className={styles.infoRow}>
