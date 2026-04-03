@@ -179,17 +179,6 @@
   line-height: 1;
 }
 
-.phoneArrow {
-  margin-left: auto;
-  color: var(--orange);
-  font-size: 20px;
-  transition: transform 0.2s;
-}
-
-.phoneBlock:hover .phoneArrow {
-  transform: translateX(4px);
-}
-
 /* CTA group */
 .ctaGroup {
   display: flex;

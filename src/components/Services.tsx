@@ -23,7 +23,7 @@ export default function Services() {
                 <h3 className={styles.title}>{svc.title}</h3>
                 <p className={styles.desc}>{svc.description}</p>
                 <span className={styles.link} aria-hidden="true">
-                  Request Service <span aria-hidden="true">→</span>
+                  Request Service
                 </span>
               </div>
             </a>
@@ -37,7 +37,7 @@ export default function Services() {
             <p className={styles.barSub}>Call for honest diagnosis and fair pricing.</p>
           </div>
           <a href={`tel:${BUSINESS.phoneRaw}`} className={`btn btn-primary btn-lg`}>
-            Call {BUSINESS.phone}
+            Call Us
           </a>
         </div>
       </div>

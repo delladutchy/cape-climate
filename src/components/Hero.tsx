@@ -31,36 +31,35 @@ export default function Hero() {
           {/* Phone — prominent */}
           <a href={`tel:${BUSINESS.phoneRaw}`} className={styles.phoneBlock} aria-label={`Call us at ${BUSINESS.phone}`}>
             <span className={styles.phoneIcon} aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
             </span>
             <span>
               <span className={styles.phoneLabel}>Call us</span>
               <span className={styles.phoneNumber}>{BUSINESS.phone}</span>
             </span>
-            <span className={styles.phoneArrow} aria-hidden="true">→</span>
           </a>
 
           {/* CTA buttons */}
           <div className={styles.ctaGroup}>
             <a href="#contact" className={`btn btn-primary btn-lg ${styles.ctaBtn}`}>
-              Get service
+              Request Service
             </a>
             <a href="#services" className={`btn btn-ghost btn-lg ${styles.ctaBtn}`}>
-              Request Quote
+              Call Us
             </a>
           </div>
 
           {/* Trust strip */}
           <div className={styles.trustStrip}>
             {[
-              { icon: '✓', label: 'Licensed & Insured' },
-              { icon: '✓', label: 'Same-Day Service Available' },
-              { icon: '✓', label: 'Locally Owned & Operated' },
+              { icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"></polyline></svg>', label: 'Licensed & Insured' },
+              { icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"></polyline></svg>', label: 'Same-Day Service Available' },
+              { icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"></polyline></svg>', label: 'Locally Owned & Operated' },
             ].map(item => (
               <div key={item.label} className={styles.trustItem}>
-                <span className={styles.trustCheck}>{item.icon}</span>
+                <span className={styles.trustCheck} dangerouslySetInnerHTML={{__html: item.icon}} />
                 <span>{item.label}</span>
               </div>
             ))}
