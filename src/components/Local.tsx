@@ -6,15 +6,15 @@ export default function Local() {
     <section className={`section section--dark ${styles.section}`} id="local" aria-labelledby="local-heading">
       <div className="container">
         <div className={styles.inner}>
-          {/* Left: Accent visual */}
+          {/* Left: Stats visual */}
           <div className={styles.visual} aria-hidden="true">
             <div className={styles.accentBar} />
             <div className={styles.statGrid}>
               {[
-                { val: 'Sussex', label: 'County, DE' },
-                { val: '1', label: 'Technician You Can Trust' },
-                { val: '100%', label: 'Local Business' },
-                { val: 'Your', label: 'Neighbor' },
+                { val: 'Sussex', label: 'County, Delaware' },
+                { val: '100%', label: 'Locally Owned & Operated' },
+                { val: 'Same', label: 'Day Service Available' },
+                { val: 'DE Lic.', label: '#HM-0000071' },
               ].map(s => (
                 <div key={s.label} className={styles.statCard}>
                   <div className={styles.statVal}>{s.val}</div>
@@ -26,21 +26,21 @@ export default function Local() {
 
           {/* Right: Copy */}
           <div className={styles.copy}>
-            <p className="eyebrow">Georgetown, Delaware</p>
+            <p className="eyebrow">Sussex County & Delaware Beaches</p>
             <h2 className="section-title" id="local-heading">
-              Neighbors Serving<br />
-              <span className="text-gradient">Neighbors</span>
+              A Local Company<br />
+              <span className="text-gradient">You Can Count On</span>
             </h2>
 
             <div className={styles.bodyText}>
               <p>
-                Cape Climate isn't a franchise. It isn't backed by a national call center or a fleet of rotating technicians. It's Adam Cress — a Sussex County resident who built a business in his own community and has to stand behind every job he does, because his neighbors are his customers.
+                Cape Climate isn't a franchise or a national chain. We're a locally owned and operated HVAC company serving Sussex County and the Delaware Beaches — and our community's trust is the foundation everything is built on.
               </p>
               <p>
-                When you call Cape Climate, you're not calling a corporation. You're calling a local business owner who lives a few miles from you and cares deeply about the reputation he's built — one honest job at a time.
+                When you call us, you're not routed through a call center or passed between departments. You reach real people who know the area, know your climate challenges, and can get someone out to you fast.
               </p>
               <p>
-                That accountability is worth something. When something's not right, Adam shows up to fix it. No tickets, no escalation chains. Just a handshake and a job done right.
+                That local accountability makes a real difference. When something isn't right, we show up to make it right — no escalation chains, no excuses.
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function Local() {
             </div>
 
             <a href="#contact" className={`btn btn-primary btn-lg ${styles.cta}`}>
-              Request Local Service
+              Request Service Today
             </a>
           </div>
         </div>

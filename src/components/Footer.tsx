@@ -2,8 +2,6 @@ import { BUSINESS } from '../data/config'
 import styles from './Footer.module.css'
 
 export default function Footer() {
-  const year = new Date().getFullYear()
-
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={`container ${styles.inner}`}>
@@ -17,7 +15,7 @@ export default function Footer() {
             </span>
           </div>
           <p className={styles.brandDesc}>
-            Georgetown's trusted local HVAC company. Master-licensed, community-focused, and committed to honest work.
+            Locally owned and operated HVAC company serving Sussex County & the Delaware Beaches. Licensed, insured, and committed to honest work.
           </p>
           <div className={styles.licenseTag}>
             <span aria-hidden="true">🏅</span>
@@ -65,10 +63,18 @@ export default function Footer() {
                 {BUSINESS.hours}
               </span>
             </li>
+            <li>
+              <span className={styles.colText}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                {BUSINESS.owner}, Owner
+              </span>
+            </li>
           </ul>
 
           <a href="#contact" className={`btn btn-outline ${styles.footerCta}`}>
-            Request Service
+            Request Service Today
           </a>
         </div>
       </div>
@@ -79,7 +85,7 @@ export default function Footer() {
           <div className={styles.bottomInner}>
             <p className={styles.copyright}>{BUSINESS.copyright}</p>
             <p className={styles.localTag}>
-              Proudly serving Georgetown & Sussex County, Delaware
+              Proudly serving Sussex County & the Delaware Beaches
             </p>
           </div>
         </div>

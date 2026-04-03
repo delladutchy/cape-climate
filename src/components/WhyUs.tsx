@@ -9,16 +9,16 @@ export default function WhyUs() {
           <div className={styles.left}>
             <p className="eyebrow">Why Cape Climate</p>
             <h2 className="section-title" id="why-us-heading">
-              Local Service.<br />
-              <span className="text-gradient">Personal Accountability.</span>
+              The Local Standard.<br />
+              <span className="text-gradient">Not the Corporate One.</span>
             </h2>
           </div>
           <div className={styles.right}>
             <p className="section-sub">
-              Big HVAC companies send whoever's available and move to the next ticket. At Cape Climate, you work directly with Adam — a master-licensed technician who has built his reputation one job at a time, right here in Sussex County.
+              Large HVAC companies send whoever's available and move to the next ticket. Cape Climate is locally owned and operated — we've built our reputation in Sussex County one honest job at a time, and we intend to keep it that way.
             </p>
             <p className={styles.subExtra}>
-              That means your comfort, your time, and your trust aren't just another work order.
+              Your comfort, your time, and your trust are never just another work order to us.
             </p>
           </div>
         </div>
@@ -41,9 +41,9 @@ export default function WhyUs() {
           <div className={styles.statementAccent} aria-hidden="true" />
           <blockquote>
             <p className={styles.statementText}>
-              "I built Cape Climate on one principle: do the job right, treat people fairly, and stand behind your work. Every call I take is a direct reflection of my name and my community."
+              "Cape Climate was built on one principle: do the job right, treat people fairly, and stand behind your work. Every call we take is a reflection of our name and our community."
             </p>
-            <cite className={styles.statementCite}>— Adam Cress, Owner & Master Technician</cite>
+            <cite className={styles.statementCite}>— Cape Climate H.V.A.C. Services · Sussex County, Delaware</cite>
           </blockquote>
         </div>
       </div>

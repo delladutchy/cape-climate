@@ -12,7 +12,7 @@ export default function Services() {
             <span className="text-gradient">Services</span>
           </h2>
           <p className="section-sub">
-            From emergency repairs to full system replacements — every job is handled personally by Adam, with craftsmanship you can count on.
+            From emergency repairs to full system replacements — every job is handled with the craftsmanship and accountability you deserve from a locally owned company.
           </p>
         </div>
 

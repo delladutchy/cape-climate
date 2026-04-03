@@ -16,14 +16,14 @@ export default function Hero() {
           {/* Trust badge */}
           <div className={styles.badge}>
             <span className={styles.badgeDot} aria-hidden="true" />
-            <span>{HERO.badge} · Georgetown, DE</span>
+            <span>{HERO.badge}</span>
           </div>
 
           {/* Main headline */}
           <h1 className={styles.headline}>
-            <span className={styles.headlineLine1}>Georgetown's</span>
-            <span className={styles.headlineLine2}>Trusted</span>
-            <span className={`${styles.headlineLine3} text-gradient`}>HVAC Experts</span>
+            <span className={styles.headlineLine1}>Trusted HVAC Experts</span>
+            <span className={`${styles.headlineLine2} text-gradient`}>Sussex County &</span>
+            <span className={styles.headlineLine3}>Delaware Beaches</span>
           </h1>
 
           <p className={styles.sub}>{HERO.subheadline}</p>
@@ -45,7 +45,7 @@ export default function Hero() {
           {/* CTA buttons */}
           <div className={styles.ctaGroup}>
             <a href="#contact" className={`btn btn-primary btn-lg ${styles.ctaBtn}`}>
-              Request Service
+              Request Service Today
             </a>
             <a href="#services" className={`btn btn-ghost btn-lg ${styles.ctaBtn}`}>
               View Services
@@ -55,9 +55,9 @@ export default function Hero() {
           {/* Trust strip */}
           <div className={styles.trustStrip}>
             {[
-              { icon: '✓', label: 'Master Licensed' },
-              { icon: '✓', label: 'Same-Day Available' },
-              { icon: '✓', label: 'Local & Accountable' },
+              { icon: '✓', label: 'Licensed & Insured' },
+              { icon: '✓', label: 'Same-Day Service Available' },
+              { icon: '✓', label: 'Locally Owned & Operated' },
             ].map(item => (
               <div key={item.label} className={styles.trustItem}>
                 <span className={styles.trustCheck}>{item.icon}</span>
@@ -83,17 +83,10 @@ export default function Hero() {
 
             <div className={styles.cardInfo}>
               <div className={styles.infoRow}>
-                <span className={styles.infoIcon} aria-hidden="true">👤</span>
-                <div>
-                  <div className={styles.infoLabel}>Your Technician</div>
-                  <div className={styles.infoValue}>{BUSINESS.owner}</div>
-                </div>
-              </div>
-              <div className={styles.infoRow}>
                 <span className={styles.infoIcon} aria-hidden="true">📍</span>
                 <div>
-                  <div className={styles.infoLabel}>Location</div>
-                  <div className={styles.infoValue}>Georgetown, Delaware</div>
+                  <div className={styles.infoLabel}>Service Area</div>
+                  <div className={styles.infoValue}>Sussex County & Delaware Beaches</div>
                 </div>
               </div>
               <div className={styles.infoRow}>
@@ -104,16 +97,23 @@ export default function Hero() {
                 </div>
               </div>
               <div className={styles.infoRow}>
+                <span className={styles.infoIcon} aria-hidden="true">🛡️</span>
+                <div>
+                  <div className={styles.infoLabel}>Coverage</div>
+                  <div className={styles.infoValue}>Fully Licensed & Insured</div>
+                </div>
+              </div>
+              <div className={styles.infoRow}>
                 <span className={styles.infoIcon} aria-hidden="true">🕐</span>
                 <div>
                   <div className={styles.infoLabel}>Hours</div>
-                  <div className={styles.infoValue}>Mon–Sat · Emergency Available</div>
+                  <div className={styles.infoValue}>Mon–Sat · Same-Day Available</div>
                 </div>
               </div>
             </div>
 
             <a href={`tel:${BUSINESS.phoneRaw}`} className={`btn btn-primary ${styles.cardCta}`}>
-              Call {BUSINESS.phone}
+              Call Now — {BUSINESS.phone}
             </a>
           </div>
         </div>

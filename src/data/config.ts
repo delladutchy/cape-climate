@@ -17,7 +17,7 @@ export const BUSINESS = {
     zip: "19947",
     full: "2641 Fells Street, Georgetown, Delaware 19947",
   },
-  serviceArea: "Georgetown, Sussex County & Surrounding Delaware Communities",
+  serviceArea: "Sussex County & Delaware Beaches",
   license: "DE Master's Licence #HM-0000071",
   licenseShort: "DE Lic. #HM-0000071",
   email: "PLACEHOLDER_EMAIL@capeclimate.com", // ← Replace with real email
@@ -27,12 +27,12 @@ export const BUSINESS = {
 };
 
 export const HERO = {
-  headline: "Georgetown's Trusted HVAC Experts",
+  headline: "Trusted HVAC Experts in Sussex County & Delaware Beaches",
   subheadline:
-    "Licensed. Local. Accountable. When your home's comfort is on the line, you deserve a technician who picks up the phone — and shows up on time.",
-  cta_primary: "Call Now",
-  cta_secondary: "Request Service",
-  badge: "DE Master's Licensed",
+    "Licensed, insured, and locally owned. When your home's comfort is on the line, Cape Climate delivers fast, reliable service — backed by a team that picks up the phone and shows up on time.",
+  cta_primary: "Call Now — We Answer",
+  cta_secondary: "Request Service Today",
+  badge: "Licensed & Insured · Locally Owned",
 };
 
 export const SERVICES = [
@@ -84,16 +84,16 @@ export const TESTIMONIALS = [
   {
     id: 1,
     name: "Sandra M.",
-    location: "Georgetown, DE",
+    location: "Rehoboth Beach, DE",
     rating: 5,
-    text: "Adam came out the same day our AC quit — in August heat. Fair price, clean work, and he actually explained what was wrong. Highly recommend Cape Climate to anyone in Sussex County.",
+    text: "Cape Climate came out the same day our AC quit — in August heat. Fair price, clean work, and they actually explained what was wrong. Highly recommend to anyone in Sussex County.",
   },
   {
     id: 2,
     name: "Tom & Diane R.",
     location: "Millsboro, DE",
     rating: 5,
-    text: "We've tried the big HVAC companies and nothing compares to the personal service Adam provides. He remembered our system details from the last visit and showed up exactly on time.",
+    text: "We've tried the big HVAC companies and nothing compares to the service Cape Climate provides. They remembered our system details from the last visit and showed up exactly on time.",
   },
   {
     id: 3,
@@ -112,22 +112,22 @@ export const TESTIMONIALS = [
   {
     id: 5,
     name: "Mike C.",
-    location: "Georgetown, DE",
+    location: "Bethany Beach, DE",
     rating: 5,
-    text: "Adam installed a new system in our rental property and made the whole process painless. Transparent pricing, quality work, and zero surprises on the bill. We use Cape Climate for everything now.",
+    text: "Cape Climate installed a new system in our beach rental property and made the whole process painless. Transparent pricing, quality work, and zero surprises on the bill. We use them for everything now.",
   },
 ];
 
 export const WHY_US = [
   {
     icon: "🏆",
-    title: "Master Licensed",
-    desc: "DE Master's licensed with years of professional HVAC experience behind every job.",
+    title: "Licensed & Insured",
+    desc: "DE Master's licensed and fully insured. Every job is performed to code, protecting your home and your investment.",
   },
   {
     icon: "📍",
-    title: "Truly Local",
-    desc: "We live here. We work here. Our reputation in Georgetown and Sussex County is everything to us.",
+    title: "Locally Owned & Operated",
+    desc: "We're not a franchise. Cape Climate is a locally owned business — our reputation in Sussex County is everything to us.",
   },
   {
     icon: "📞",
@@ -137,16 +137,16 @@ export const WHY_US = [
   {
     icon: "💬",
     title: "Honest Assessments",
-    desc: "We recommend what you need — not what makes us the most money. Your trust is worth more than any upsell.",
+    desc: "We recommend what you need — not what generates the highest invoice. Your trust is worth more than any upsell.",
   },
   {
     icon: "⚡",
-    title: "Fast Response",
-    desc: "We respect your time. Quick scheduling, punctual arrivals, and efficient service on every visit.",
+    title: "Same-Day Service Available",
+    desc: "HVAC problems don't wait. We offer same-day availability to get your system back up and running fast.",
   },
   {
     icon: "✅",
     title: "Work Guaranteed",
-    desc: "We stand behind every repair and installation. If something's not right, we make it right.",
+    desc: "We stand behind every repair and installation. If something's not right, we come back and make it right.",
   },
 ];
