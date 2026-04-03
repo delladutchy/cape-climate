@@ -8,11 +8,10 @@ export default function Services() {
         <div className={styles.header}>
           <p className="eyebrow">What We Do</p>
           <h2 className="section-title" id="services-heading">
-            Complete HVAC<br />
-            <span className="text-gradient">Services</span>
+            HVAC Services
           </h2>
           <p className="section-sub">
-            From emergency repairs to full system replacements — every job is handled with the craftsmanship and accountability you deserve from a locally owned company.
+            Emergency repairs, installations, and maintenance for all your HVAC needs.
           </p>
         </div>
 
@@ -35,7 +34,7 @@ export default function Services() {
         <div className={styles.bottomBar}>
           <div>
             <p className={styles.barTitle}>Not sure what you need?</p>
-            <p className={styles.barSub}>Call us and we'll diagnose the issue honestly — no unnecessary upsells.</p>
+            <p className={styles.barSub}>Call for honest diagnosis and fair pricing.</p>
           </div>
           <a href={`tel:${BUSINESS.phoneRaw}`} className={`btn btn-primary btn-lg`}>
             Call {BUSINESS.phone}

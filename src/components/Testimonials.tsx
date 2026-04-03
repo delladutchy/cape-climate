@@ -19,10 +19,10 @@ export default function Testimonials() {
           <p className="eyebrow">Customer Reviews</p>
           <h2 className="section-title" id="reviews-heading">
             What Sussex County<br />
-            <span className="text-gradient">Says About Us</span>
+            Says About Us
           </h2>
           <p className="section-sub">
-            Real customers. Real results. Our reputation is built one satisfied household at a time.
+            Real customers, real results.
           </p>
         </div>
 

@@ -10,15 +10,15 @@ export default function WhyUs() {
             <p className="eyebrow">Why Cape Climate</p>
             <h2 className="section-title" id="why-us-heading">
               The Local Standard.<br />
-              <span className="text-gradient">Not the Corporate One.</span>
+              Not the Corporate One.
             </h2>
           </div>
           <div className={styles.right}>
             <p className="section-sub">
-              Large HVAC companies send whoever's available and move to the next ticket. Cape Climate is locally owned and operated — we've built our reputation in Sussex County one honest job at a time, and we intend to keep it that way.
+              Locally owned in Sussex County. We earn our reputation on every job.
             </p>
             <p className={styles.subExtra}>
-              Your comfort, your time, and your trust are never just another work order to us.
+              No shortcuts. No runaround.
             </p>
           </div>
         </div>
@@ -26,10 +26,7 @@ export default function WhyUs() {
         <div className={styles.grid}>
           {WHY_US.map((item, i) => (
             <div key={item.title} className={styles.card} style={{ animationDelay: `${i * 0.08}s` }}>
-              <div className={styles.cardTop}>
-                <span className={styles.icon} aria-hidden="true">{item.icon}</span>
-                <div className={styles.accentLine} aria-hidden="true" />
-              </div>
+              <span className={styles.icon} aria-hidden="true">{item.icon}</span>
               <h3 className={styles.cardTitle}>{item.title}</h3>
               <p className={styles.cardDesc}>{item.desc}</p>
             </div>

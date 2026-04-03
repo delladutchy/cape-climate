@@ -26,7 +26,7 @@ export default function Hero() {
             <span className={styles.headlineLine3}>Experts</span>
           </h1>
 
-          <p className={styles.sub}>Fast, reliable HVAC service. We answer the phone and show up on time.</p>
+          <p className={styles.sub}>Fast, reliable HVAC service — no hassle. No surprises.</p>
 
           {/* Phone — prominent */}
           <a href={`tel:${BUSINESS.phoneRaw}`} className={styles.phoneBlock} aria-label={`Call us at ${BUSINESS.phone}`}>
@@ -36,7 +36,7 @@ export default function Hero() {
               </svg>
             </span>
             <span>
-              <span className={styles.phoneLabel}>Call Now — We Answer</span>
+              <span className={styles.phoneLabel}>Call us</span>
               <span className={styles.phoneNumber}>{BUSINESS.phone}</span>
             </span>
             <span className={styles.phoneArrow} aria-hidden="true">→</span>
@@ -45,10 +45,10 @@ export default function Hero() {
           {/* CTA buttons */}
           <div className={styles.ctaGroup}>
             <a href="#contact" className={`btn btn-primary btn-lg ${styles.ctaBtn}`}>
-              Request Service Today
+              Get service
             </a>
             <a href="#services" className={`btn btn-ghost btn-lg ${styles.ctaBtn}`}>
-              View Services
+              Request Quote
             </a>
           </div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
             <div className={styles.cardHeader}>
               <div className={styles.cardLogo}>CC</div>
               <div>
-                <div className={styles.cardName}>Cape Climate</div>
+                <div className={styles.cardName}>CAPE° CLIMATE°</div>
                 <div className={styles.cardTagline}>H.V.A.C. Services</div>
               </div>
             </div>
