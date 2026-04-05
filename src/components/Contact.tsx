@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BUSINESS } from '../data/config'
 import styles from './Contact.module.css'
 
-type FormState = 'idle' | 'submitting' | 'success' | 'error'
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mykblggk'
+
+type FormState = 'idle' | 'success'
 
 interface FormData {
   name: string
@@ -38,31 +40,13 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setFormState('submitting')
-
-    // -------------------------------------------------------
-    // FORM INTEGRATION PLACEHOLDER
-    // To connect a real form backend, replace this timeout with
-    // a fetch() call to one of these services:
-    //   - Formspree:  https://formspree.io  (free tier, easy)
-    //   - Web3Forms:  https://web3forms.com (free, no signup)
-    //   - EmailJS:    https://emailjs.com
-    //
-    // Example with Formspree:
-    //   const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(formData),
-    //   })
-    //   if (res.ok) setFormState('success')
-    //   else setFormState('error')
-    // -------------------------------------------------------
-
-    await new Promise(r => setTimeout(r, 1200))
-    setFormState('success')
-  }
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('form') === 'success') {
+      setFormState('success')
+      window.history.replaceState({}, document.title, window.location.pathname + window.location.hash)
+    }
+  }, [])
 
   return (
     <section className={`section section--dark ${styles.section}`} id="contact" aria-labelledby="contact-heading">
@@ -129,7 +113,13 @@ export default function Contact() {
                   <p>Thanks for reaching out. We'll be in touch within one business day. For urgent issues, call us directly at <a href={`tel:${BUSINESS.phoneRaw}`}>{BUSINESS.phone}</a>.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} noValidate>
+                <form action={FORMSPREE_ENDPOINT} method="POST" noValidate>
+                  <input type="hidden" name="subject" value="New Cape Climate Service Request" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value={`${window.location.origin}${window.location.pathname}?form=success#contact`}
+                  />
                   <div className={styles.formRow}>
                     <div className={styles.field}>
                       <label htmlFor="name" className={styles.label}>Your Name *</label>
@@ -205,19 +195,8 @@ export default function Contact() {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className={`btn btn-primary btn-lg ${styles.submitBtn}`}
-                    disabled={formState === 'submitting'}
-                  >
-                    {formState === 'submitting' ? (
-                      <>
-                        <span className={styles.spinner} aria-hidden="true" />
-                        Sending…
-                      </>
-                    ) : (
-                      'Send Request'
-                    )}
+                  <button type="submit" className={`btn btn-primary btn-lg ${styles.submitBtn}`}>
+                    Send Request
                   </button>
 
                   <p className={styles.formNote}>
