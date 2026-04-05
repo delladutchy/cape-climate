@@ -10,18 +10,22 @@
   --dark-3: #222228;
   --dark-4: #2c2c34;
   --border: rgba(255, 255, 255, 0.07);
-  --border-hover: rgba(255, 165, 60, 0.3);
+  --border-hover: rgba(224, 142, 59, 0.24);
 
   /* Orange — primary accent */
-  --orange: #e8621a;
-  --orange-light: #f07830;
-  --orange-dim: rgba(232, 98, 26, 0.15);
-  --orange-glow: rgba(232, 98, 26, 0.25);
+  --orange: #c56217;
+  --orange-light: #e18e3b;
+  --orange-hover: #d67c27;
+  --orange-soft: rgba(197, 98, 23, 0.10);
+  --orange-border: rgba(197, 98, 23, 0.24);
+  --orange-dim: rgba(197, 98, 23, 0.15);
+  --orange-glow: rgba(197, 98, 23, 0.30);
+  --orange-glow-strong: rgba(197, 98, 23, 0.45);
 
   /* Gradient accent (blue → purple → red, like card) */
   --grad-accent: linear-gradient(180deg, #4a6cf7 0%, #7c3aed 35%, #c2185b 65%, #e53935 100%);
   --grad-accent-h: linear-gradient(90deg, #4a6cf7 0%, #7c3aed 35%, #c2185b 65%, #e53935 100%);
-  --grad-orange: linear-gradient(135deg, #e8621a 0%, #f09030 100%);
+  --grad-orange: linear-gradient(135deg, #c56217 0%, #e18e3b 100%);
   --grad-dark: linear-gradient(180deg, var(--black) 0%, var(--dark-2) 100%);
 
   /* Text */
@@ -41,7 +45,7 @@
 
   /* Shadows */
   --shadow-card: 0 4px 32px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 40px rgba(232, 98, 26, 0.15);
+  --shadow-glow: 0 0 40px var(--orange-glow);
 }
 
 /* ===================================================
@@ -165,7 +169,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 36px rgba(232, 98, 26, 0.45);
+  box-shadow: 0 10px 36px var(--orange-glow-strong);
   filter: brightness(1.08);
 }
 
@@ -249,7 +253,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 4px 20px var(--orange-glow); }
-  50%       { box-shadow: 0 6px 48px rgba(232, 98, 26, 0.5); }
+  50%       { box-shadow: 0 6px 48px var(--orange-glow-strong); }
 }
 
 .animate-fade-up {

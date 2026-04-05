@@ -32,7 +32,7 @@
   right: -10%;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(232, 98, 26, 0.08) 0%, transparent 60%);
+  background: radial-gradient(circle, var(--orange-soft) 0%, transparent 60%);
   border-radius: 50%;
 }
 
@@ -66,8 +66,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(232, 98, 26, 0.1);
-  border: 1px solid rgba(232, 98, 26, 0.25);
+  background: var(--orange-soft);
+  border: 1px solid var(--orange-border);
   color: var(--orange-light);
   font-size: 12px;
   font-weight: 600;
