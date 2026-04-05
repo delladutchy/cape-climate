@@ -315,7 +315,7 @@
   width: 100%;
   justify-content: center;
   border-radius: 8px !important;
-  animation: pulse-glow 3s ease infinite;
+  padding: 10px 20px;
 }
 
 /* Scroll indicator */

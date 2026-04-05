@@ -46,9 +46,6 @@ export default function Hero() {
             <a href="#contact" className={`btn btn-primary btn-lg ${styles.ctaBtn}`}>
               Request Service
             </a>
-            <a href="#services" className={`btn btn-ghost btn-lg ${styles.ctaBtn}`}>
-              Call Us
-            </a>
           </div>
 
           {/* Trust strip */}
@@ -112,7 +109,7 @@ export default function Hero() {
             </div>
 
             <a href={`tel:${BUSINESS.phoneRaw}`} className={`btn btn-primary ${styles.cardCta}`}>
-              Call Now — {BUSINESS.phone}
+              Call {BUSINESS.phone}
             </a>
           </div>
         </div>
