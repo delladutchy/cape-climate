@@ -387,22 +387,42 @@
 
 @media (max-width: 600px) {
   .hero {
-    padding-top: 80px;
+    padding-top: 72px;
+  }
+
+  .inner {
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+
+  .badge {
+    margin-bottom: 18px;
+  }
+
+  .headline {
+    margin-bottom: 16px;
+  }
+
+  .sub {
+    margin-bottom: 24px;
+  }
+
+  .phoneBlock {
+    width: 100%;
+    margin-bottom: 16px;
   }
 
   .ctaGroup {
     flex-direction: column;
+    margin-bottom: 24px;
   }
 
   .ctaBtn {
     width: 100%;
   }
 
-  .phoneBlock {
-    width: 100%;
-  }
-
   .trustStrip {
-    gap: 16px;
+    gap: 12px;
   }
 }
