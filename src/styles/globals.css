@@ -10,22 +10,22 @@
   --dark-3: #222228;
   --dark-4: #2c2c34;
   --border: rgba(255, 255, 255, 0.07);
-  --border-hover: rgba(224, 142, 59, 0.24);
+  --border-hover: rgba(59, 91, 219, 0.24);
 
-  /* Orange — primary accent */
-  --orange: #c56217;
-  --orange-light: #e18e3b;
-  --orange-hover: #d67c27;
-  --orange-soft: rgba(197, 98, 23, 0.10);
-  --orange-border: rgba(197, 98, 23, 0.24);
-  --orange-dim: rgba(197, 98, 23, 0.15);
-  --orange-glow: rgba(197, 98, 23, 0.30);
-  --orange-glow-strong: rgba(197, 98, 23, 0.45);
+  /* Electric Cobalt — primary accent */
+  --orange: #3b5bdb;
+  --orange-light: #74c0fc;
+  --orange-hover: #2f4ac7;
+  --orange-soft: rgba(59, 91, 219, 0.10);
+  --orange-border: rgba(59, 91, 219, 0.24);
+  --orange-dim: rgba(59, 91, 219, 0.15);
+  --orange-glow: rgba(59, 91, 219, 0.30);
+  --orange-glow-strong: rgba(59, 91, 219, 0.45);
 
   /* Gradient accent (blue → purple → red, like card) */
   --grad-accent: linear-gradient(180deg, #4a6cf7 0%, #7c3aed 35%, #c2185b 65%, #e53935 100%);
   --grad-accent-h: linear-gradient(90deg, #4a6cf7 0%, #7c3aed 35%, #c2185b 65%, #e53935 100%);
-  --grad-orange: linear-gradient(135deg, #c56217 0%, #e18e3b 100%);
+  --grad-orange: linear-gradient(135deg, #1c3faa 0%, #74c0fc 100%);
   --grad-dark: linear-gradient(180deg, var(--black) 0%, var(--dark-2) 100%);
 
   /* Text */
