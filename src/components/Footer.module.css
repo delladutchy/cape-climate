@@ -34,7 +34,7 @@
   font-family: var(--font-display);
   font-size: 20px;
   letter-spacing: 0.05em;
-  color: var(--orange-light);
+  color: var(--text-primary);
   line-height: 1;
 }
 
